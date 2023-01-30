@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+<h1>Menu:</h1>
+<table border="1" >
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Salad</th>
+            <th>Soup</th>
+            <th>Main Dish</th>
+            <th>Beverage</th>
+            <th>Desert</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="lunch :${menu}">
+            <td th:text=${lunch.getId()}>id</td>
+            <td th:text=${lunch.getSalad()}>salad</td>
+            <td th:text=${lunch.getSoup()}>soup</td>
+            <td th:text=${lunch.getMainDish()}>main dish</td>
+            <td th:text=${lunch.getBeverage()}>beverage</td>
+            <td th:text=${lunch.getDesert()}>desert</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<form action="/BuilderPattern">
+    <input type="submit" value="Back"/>
+</form>
+</body>
+</html>
