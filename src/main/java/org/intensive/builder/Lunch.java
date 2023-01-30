@@ -1,31 +1,27 @@
 package org.intensive.builder;
 
+import lombok.Data;
+
+import javax.persistence.*;
+
+@Entity
+@Data
+@Table(name = "lunch")
 public class Lunch {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
+    private int id;
+    @Column(name="salad")
     private String salad;
+    @Column(name="soup")
     private String soup;
+    @Column(name="main_dish")
     private String mainDish;
+    @Column(name="beverage")
     private String beverage;
+    @Column(name="desert")
     private String desert;
-
-    public void setSalad(String salad) {
-        this.salad = salad;
-    }
-
-    public void setSoup(String soup) {
-        this.soup = soup;
-    }
-
-    public void setMainDish(String mainDish) {
-        this.mainDish = mainDish;
-    }
-
-    public void setBeverage(String beverage) {
-        this.beverage = beverage;
-    }
-
-    public void setDesert(String desert) {
-        this.desert = desert;
-    }
 
     @Override
     public String toString() {
@@ -35,4 +31,5 @@ public class Lunch {
                 ", beverage: " + beverage +
                 ", desert: " + desert;
     }
+
 }
