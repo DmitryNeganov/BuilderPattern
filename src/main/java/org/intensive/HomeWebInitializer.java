@@ -1,6 +1,6 @@
-package dvn.intensive;
+package org.intensive;
 
-import dvn.intensive.config.HomeConfig;
+import org.intensive.config.HomeConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class HomeWebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {

@@ -1,10 +1,10 @@
-package dvn.intensive.controller;
+package org.intensive.controller;
 
-import dvn.intensive.builder.Director;
-import dvn.intensive.builder.Lunch;
-import dvn.intensive.builder.concrete_builders.FullLunchBuilder;
-import dvn.intensive.builder.concrete_builders.LightLunchBuilder;
-import dvn.intensive.builder.concrete_builders.StandardLunchBuilder;
+import org.intensive.builder.Director;
+import org.intensive.builder.Lunch;
+import org.intensive.builder.concrete_builders.FullLunchBuilder;
+import org.intensive.builder.concrete_builders.LightLunchBuilder;
+import org.intensive.builder.concrete_builders.StandardLunchBuilder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

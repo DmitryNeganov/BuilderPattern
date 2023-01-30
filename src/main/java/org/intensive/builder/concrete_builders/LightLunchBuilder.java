@@ -1,7 +1,7 @@
-package dvn.intensive.builder.concrete_builders;
+package org.intensive.builder.concrete_builders;
 
-import dvn.intensive.builder.LunchBuilder;
-import dvn.intensive.builder.Lunch;
+import org.intensive.builder.LunchBuilder;
+import org.intensive.builder.Lunch;
 
 public class LightLunchBuilder implements LunchBuilder {
 

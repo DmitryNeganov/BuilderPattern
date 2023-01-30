@@ -1,10 +1,9 @@
-package dvn.intensive.builder.concrete_builders;
+package org.intensive.builder.concrete_builders;
 
-import dvn.intensive.builder.LunchBuilder;
-import dvn.intensive.builder.Lunch;
+import org.intensive.builder.LunchBuilder;
+import org.intensive.builder.Lunch;
 
-public class StandardLunchBuilder implements LunchBuilder {
-
+public class FullLunchBuilder implements LunchBuilder {
     private Lunch lunch;
 
     @Override
@@ -25,7 +24,6 @@ public class StandardLunchBuilder implements LunchBuilder {
         return this;
     }
 
-    @Override
     public LunchBuilder addMainDish() {
         lunch.setMainDish("Lasagna");
         return this;
@@ -33,13 +31,13 @@ public class StandardLunchBuilder implements LunchBuilder {
 
     @Override
     public LunchBuilder addBeverage() {
-        lunch.setBeverage("not in order");
+        lunch.setBeverage("Coffee");
         return this;
     }
 
     @Override
     public LunchBuilder addDesert() {
-        lunch.setDesert("not in order");
+        lunch.setDesert("Cookie");
         return this;
     }
 }

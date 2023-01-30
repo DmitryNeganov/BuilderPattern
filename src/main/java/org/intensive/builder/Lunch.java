@@ -1,4 +1,4 @@
-package dvn.intensive.builder;
+package org.intensive.builder;
 
 public class Lunch {
     private String salad;

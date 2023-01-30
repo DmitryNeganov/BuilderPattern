@@ -1,4 +1,4 @@
-package dvn.intensive.builder;
+package org.intensive.builder;
 
 public class Director {
     public Lunch getLunch(LunchBuilder lunchBuilder) {
